@@ -7,4 +7,10 @@
 
 
     FLUSH PRIVILEGES;
+    
+    
+ 
+# view table data 
+
+      SELECT * From pandi ;   
 
