@@ -12,5 +12,25 @@
  
 # view table data 
 
-      SELECT * From pandi ;   
+      SELECT * From pandi ;  
+      
+  # how to change the database     
+       use Sanjana;     
+       
+  # how to create the table      
+       
+       CREATE  TABLE  pandi  (Memberid int , MemberName varchar(255) , MemeberAge  int);
+       
+       
+     # how to create database in my sql
+     
+         create database Sanjana;  
+         
+    # how to insert to data in tables
+    
+    
+       INSERT INTO pandi VALUES (1, 'pandi', 30);
 
+       # how to view the batabase
+
+         show Sanjana;
