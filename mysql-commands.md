@@ -34,11 +34,20 @@
        
        CREATE  TABLE  pandi  (Memberid int , MemberName varchar(255) , MemeberAge  int);
        
-       
+  # how to delete the table
+  
+  
+         DROP Table pandi;
+         
+         
      # how to create database in my sql
      
-         create database Sanjana;  
+         create database Sanjana;
          
+     # how to delete database 
+     
+     
+       DROP DATABASE Sanjana;  
     # how to insert to data in tables
     
     
