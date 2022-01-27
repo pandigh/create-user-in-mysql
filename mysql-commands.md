@@ -82,7 +82,7 @@
          
          sudo systemctl status apache2
 
-    # how to sto,start,re-start apache2 
+    #  how to stop,start,re-start apache2 
     
           sudo systemctl stop apache2
           
