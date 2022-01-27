@@ -73,3 +73,29 @@
     # how to delete one colomn in table
     
        ALTER TABLE pandi DROP COLUMN Memberid;
+       
+    # how to install webserver apache2 in ubuntu
+    
+         sudo apt update
+         
+         sudo apt install apache2
+         
+         sudo systemctl status apache2
+
+    # how to sto,start,re-start apache2 
+    
+          sudo systemctl stop apache2
+          
+          sudo systemctl start apache2
+          
+          sudo systemctl restart apache2
+          
+   # how to remove the apache2 server
+   
+           sudo apt remove apache2
+           
+
+         
+
+         
+            
