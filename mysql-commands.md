@@ -1,3 +1,16 @@
+
+# how to login mysql root user
+
+    mysql -u root -p
+    
+    
+ # how to login normal user
+ 
+ 
+    mysql -u pandiyan -p
+    
+    
+
 # mysql user creation 
 
 
