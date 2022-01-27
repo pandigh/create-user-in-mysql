@@ -56,3 +56,20 @@
        # how to view the batabase
 
          show Sanjana;
+         
+         
+    # how to delete one record from thetable
+    
+    
+         DELETE FROM pandi  WHERE Memberid=2;
+         
+         
+    # how to delete total records in table 
+    
+    
+        DELETE FROM pandi;
+        
+        
+    # how to delete one colomn in table
+    
+       ALTER TABLE pandi DROP COLUMN Memberid;
