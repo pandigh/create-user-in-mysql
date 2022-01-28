@@ -74,6 +74,12 @@
     
        ALTER TABLE pandi DROP COLUMN Memberid;
        
+        # how to restore the data base
+    
+    
+       source /home/pandi/pandiya.sql
+       
+       
     # how to install webserver apache2 in ubuntu
     
          sudo apt update
@@ -95,10 +101,6 @@
            sudo apt remove apache2
            
            
-    # how to restore the data base
-    
-    
-       source /home/pandi/pandiya.sql
           
 
          
