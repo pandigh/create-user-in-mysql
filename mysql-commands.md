@@ -101,6 +101,25 @@
            sudo apt remove apache2
            
            
+   # how to check port listen or not in mysql   
+   
+   
+         netstat -tulpn | grep 3306     (mysql port3306)
+
+
+    # how to check port listen or not  in apache2
+    
+    
+          netstat -tulpn | grep 80       (apache2 port 800
+          
+          
+    # how to check howmany potrs on ur system
+    
+    
+           netstst -tulpn
+
+           
+           
           
 
          
