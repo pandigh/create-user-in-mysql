@@ -94,6 +94,12 @@
    
            sudo apt remove apache2
            
+           
+    # how to restore the data base
+    
+    
+       source /home/pandi/pandiya.sql
+          
 
          
 
