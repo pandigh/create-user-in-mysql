@@ -116,7 +116,38 @@
     # how to check howmany potrs on ur system
     
     
-           netstst -tulpn
+           netstst -tulpn 
+
+
+           
+           
+    # how to copy the file in one server to another server
+    
+    
+           sudo scp pandi.txt ai@192.168.0.101:/home/ai 
+           
+            here pandi.txt is my system txtfile
+            ai is another server user name
+            192.168.0.101 is another server ip adress
+            /home/ai is ai user home directory is copied
+            
+            
+    # how to copy the another server file into my my server
+    
+    
+          sudo scp  ai@192.168.0.101:/home/ai/c.txt /home/pandi  
+
+           here c.txt is ai user file so c.txt copy to home directory of pandi
+    
+    
+        
+    
+    
+    
+            
+    
+    
+          
 
            
            
