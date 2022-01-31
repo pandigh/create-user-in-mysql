@@ -149,7 +149,14 @@
           
           ai is romote server name
            192.168.0.101 is remote server ip adress
-    
+           
+           
+   # how to find the ip,subnetmask,getway,dns
+   
+   
+        nmcli dev show wlp4s0 | grep -i ip4
+
+             wlp4so is room wifi connection  
     
         
     
