@@ -26,14 +26,14 @@
     mysql -u root -p
     
     
- # how to login normal user
+ # how to login mysql normal user
  
  
     mysql -u pandiyan -p
     
     
 
-# mysql user creation 
+# creat user in mysql database
 
 
     CREATE USER 'pandiyan'@'localhost' IDENTIFIED BY 'Pandi@12345';
@@ -45,11 +45,12 @@
     
     
  
-# view table data 
+# how to  view table data 
 
       SELECT * From pandi ;  
       
-  # how to change the database     
+  # how to change the database  
+  
        use Sanjana;     
        
   # how to create the table      
@@ -62,7 +63,7 @@
          DROP Table pandi;
          
          
-   # how to create database in my sql
+   # how to create database in mysql
      
          create database Sanjana;
          
@@ -81,7 +82,7 @@
          show Sanjana;
          
          
-   # how to delete one record from thetable
+   # how to delete one record from the table
     
     
          DELETE FROM pandi  WHERE Memberid=2;
@@ -142,8 +143,7 @@
 
 
            
-           
-   # how to copy the file in one server to another server
+   # how to copy the file in one server to remote server
     
     
            sudo scp pandi.txt ai@192.168.0.101:/home/ai 
@@ -154,15 +154,13 @@
             /home/ai is ai user home directory is copied
             
             
-  # how to copy the another server file into my my server
+  # how to copy the remote server file into  my server
     
     
         sudo scp  ai@192.168.0.101:/home/ai/c.txt /home/pandi  
 
          here c.txt is ai user file so c.txt copy to home directory of pandi
-
-
-           
+     
            
    # how to take ssh in remote server   
     
