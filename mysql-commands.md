@@ -1,3 +1,25 @@
+ # how to install mysql server in ubuntu
+ 
+    sudo apt update
+    
+    sudo apt install mysql-servers
+    
+    sudo systemctl status mysql
+    
+    sudo mysql_secure_installation
+
+ # how to uninstall mysql in ubuntu
+ 
+  sudo systemctl stop mysql
+
+  sudo apt-get purge mysql-server mysql-client mysql-common mysql-server-core-* mysql-client-core-*
+
+  sudo rm -rf /etc/mysql /var/lib/mysql
+  
+  sudo apt autoremove
+  
+  sudo apt autoclean
+
 
 # how to login mysql root user
 
