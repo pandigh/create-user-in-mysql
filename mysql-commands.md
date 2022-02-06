@@ -171,6 +171,11 @@
            192.168.0.101 is remote server ip adress
            
            
+   # How to stop the ssh server
+   
+      sudo service ssh stop
+           
+           
    # how to find the ip,subnetmask,getway,dns
    
    
