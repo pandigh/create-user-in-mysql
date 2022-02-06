@@ -174,6 +174,8 @@
    # How to stop the ssh server
    
       sudo service ssh stop
+      
+      sudo systemctl disable sshd.service
            
            
    # how to find the ip,subnetmask,getway,dns
