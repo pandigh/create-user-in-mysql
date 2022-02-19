@@ -168,7 +168,21 @@
           sudo ssh ai@192.168.0.101
           
           ai is romote server name
-           192.168.0.101 is remote server ip adress
+           192.168.0.101 is remote server ip adress 
+           
+   # how to passwordless accees in remote server
+       first  generate keys in ssh-keygen
+       then created two keys Generating public/private rsa key pair.
+Enter file in which to save the key (/home/ubuntu/.ssh/id_rsa):   # Enter or input changes if you want
+Created directory '/home/ubuntu/.ssh'.
+Enter passphrase (empty for no passphrase):   # set passphrase (if set no passphrase, Enter with empty)
+Enter same passphrase again:
+Your identification has been saved in /home/ubuntu/.ssh/id_rsa
+Your public key has been saved in /home/ubuntu/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:8c0JKIhM5yPk6Kd2YloCsiKOKKjqPu5Qcot94/buwEg ubuntu@dlp.srv.world
+The key's randomart image is:
+then copy the remote server in using command is ssh-copy-id username@ip then enteer after take ssh to remote server now login without passwd
            
            
    # How to stop the ssh server
