@@ -97,6 +97,10 @@
     
        ALTER TABLE pandi DROP COLUMN Memberid;
        
+  # how to backup in mysql databases 
+  
+      sudo mysqldump -u [user] -p [database_name] > [filename].sql
+       
    # how to restore the data base
     
     
