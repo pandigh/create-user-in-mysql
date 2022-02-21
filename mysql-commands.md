@@ -187,6 +187,15 @@ The key fingerprint is:
 SHA256:8c0JKIhM5yPk6Kd2YloCsiKOKKjqPu5Qcot94/buwEg ubuntu@dlp.srv.world
 The key's randomart image is:
 then copy the remote server in using command is ssh-copy-id username@ip then enteer after take ssh to remote server now login without passwd
+
+   # how to install the ssh server 
+   
+      sudo apt update
+      sudo apt install openssh-server
+      sudo ufw enable
+      sudo ufw allow ssh
+      sudo systemctl status ssh
+      sudo systemctl start ssh
            
            
    # How to stop the ssh server
