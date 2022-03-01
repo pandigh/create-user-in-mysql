@@ -182,8 +182,16 @@ mysql> SELECT * FROM pfamily WHERE id=1;
     
     
        INSERT INTO pandi VALUES (1, 'pandi', 30);
-INSERT INTO table name
-VALUES ()
+       INSERT INTO table name
+         VALUES ()
+          INSERT INTO table_name (column1, column2, column3 . . ) VALUES(value1, value2, value3 . . ) 
+          table_name : name of the existing table. 
+           column1 : name of first column. 
+            column2 : name of second column. 
+             column3 : name of third column. 
+              value1 : value for first column. 
+               value2 : value for second column. 
+                value3 : value for third column. 
 
 
    # how to view the batabase
