@@ -19,8 +19,12 @@
   sudo apt autoremove
   
   sudo apt autoclean
-
-
+  
+  # how to check time in mysql server
+  
+     SELECT NOW(); date and time 
+     CURDATE(); date only showing
+     
 # pandi analysis
 
   first you go root user use sudo -i
@@ -135,39 +139,52 @@ mysql> SELECT * FROM pfamily WHERE id=1;
 
     FLUSH PRIVILEGES;
     
+# how to create database in mysql    
     
- 
-# how to  view table data 
-
-      SELECT * From pandi ;  
+  
+     CREATE DATABASE database_name;
+  
+ # how to delete database 
+     
+     
+       DROP DATABASE Sanjana;
       
   # how to change the database  
   
        use Sanjana;     
        
+  # how to check which database you are selected 
+    
+       SELECT DATABASE();
+       
+       
   # how to create the table      
        
        CREATE  TABLE  pandi  (Memberid int , MemberName varchar(255) , MemeberAge  int);
+       
+   # how to  view table data 
+
+      SELECT * From pandi ;      
+       
+       
+  # how to rename the table
+  
+  
+     RENAME TABLE old_table_name TO new_table_name 
        
   # how to delete the table
   
   
          DROP Table pandi;
          
-         
-   # how to create database in mysql
-     
-         create database Sanjana;
-         
-   # how to delete database 
-     
-     
-       DROP DATABASE Sanjana;
        
    # how to insert to data in tables
     
     
        INSERT INTO pandi VALUES (1, 'pandi', 30);
+INSERT INTO table name
+VALUES ()
+
 
    # how to view the batabase
 
