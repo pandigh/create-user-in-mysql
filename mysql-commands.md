@@ -21,6 +21,98 @@
   sudo apt autoclean
 
 
+# pandi analysis
+
+  first you go root user use sudo -i
+  enter the terminal mysql
+  mysql opened
+  create user 
+  then login to user  use mysql -u username -p
+  mysql -u jin -p
+ Enter password: 
+ Welcome to the MySQL monitor.  Commands end with ; or \g.
+ Your MySQL connection id is 9
+
+  enter the password
+  create database 
+  see the database use SHOW DATABASES
+  mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| pandidb            |
+| performance_schema |
+| sana               |
+| sys                |
++--------------------+
+6 rows in set (0.01 sec)
+
+  use creation database
+  mysql> use pandidb;
+  Database changed
+
+  then create table using create tabe cmd 
+  mysql> CREATE TABLE pfamily(id int, name varchar(50), age int, adress varchar(50));
+  Query OK, 0 rows affected (0.02 sec)
+
+  show tables using see the table
+  mysql> show tables;
++-------------------+
+| Tables_in_pandidb |
++-------------------+
+| pfamily           |
++-------------------+
+1 row in set (0.00 sec)
+
+  and insert into  values ex id,name ,age and given numbers ,names etc
+  mysql> INSERT INTO pfamily (id, name, age, adress)
+    -> VALUES (1, 'pandi', 30, 'mangalakudi');
+     Query OK, 1 row affected (0.02 sec)
+
+  then see the table use SELECT * FROM pfamily(table name is pfamily)
+  mysql> SELECT *
+    -> FROM pfamily;
++------+-------+------+-------------+
+| id   | name  | age  | adress      |
++------+-------+------+-------------+
+|    1 | pandi |   30 | mangalakudi |
+|    2 | sana  |    2 | o u madai   |
+|    3 | kavi  |   30 | senavayal   |
+|    4 | jino  |   31 | orikottai   |
+|    5 | raja  |   24 | dvk         |
++------+-------+------+-------------+
+5 rows in set (0.00 sec)
+
+SELECT ( if adress want adress typeing but age want just type age and all columns want just type * ostrick symboll)
+FROM pfamily;
+mysql> SELECT adress FROM pfamily;
++-------------+
+| adress      |
++-------------+
+| mangalakudi |
+| o u madai   |
+| senavayal   |
+| orikottai   |
+| dvk         |
++-------------+
+5 rows in set (0.00 sec)
+
+
+using WHERE clause 
+
+mysql> SELECT * FROM pfamily WHERE id=1;
++------+-------+------+-------------+
+| id   | name  | age  | adress      |
++------+-------+------+-------------+
+|    1 | pandi |   30 | mangalakudi |
++------+-------+------+-------------+
+1 row in set (0.00 sec)
+
+
+  
+
 # how to login mysql root user
 
     mysql -u root -p
