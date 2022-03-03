@@ -207,7 +207,7 @@ mysql> SELECT * FROM pfamily WHERE id=1;
 
    # how to view the batabase
 
-         show Sanjana;
+     SHOW DATABASES; 
          
          
    # how to delete one record from the table
@@ -264,6 +264,8 @@ mysql> SELECT * FROM pfamily WHERE id=1;
    
    
          netstat -tulpn | grep 3306     (mysql port3306)
+         
+          SS -tulpn 
 
 
    # how to check port listen or not  in apache2
@@ -275,16 +277,31 @@ mysql> SELECT * FROM pfamily WHERE id=1;
    # how to check howmany potrs on ur system
     
     
-           netstst -tulpn 
-
-
+           netstat -tulpn 
            
-   # how to copy the file in one server to remote server
+   # how to install the ssh server 
+   
+      sudo apt update
+      sudo apt install openssh-server
+      sudo ufw enable
+      sudo ufw allow ssh
+      sudo systemctl status ssh
+      sudo systemctl start ssh
+           
+           
+   # How to stop the ssh server
+   
+      sudo service ssh stop
+      
+      sudo systemctl disable sshd.service
+                 
+           
+   # how to copy the file in local server to remote server
     
     
            sudo scp pandi.txt ai@192.168.0.101:/home/ai 
            
-            here pandi.txt is my system txtfile
+            here pandi.txt is local system txtfile
             ai is another server user name
             192.168.0.101 is another server ip adress
             /home/ai is ai user home directory is copied
@@ -320,22 +337,7 @@ SHA256:8c0JKIhM5yPk6Kd2YloCsiKOKKjqPu5Qcot94/buwEg ubuntu@dlp.srv.world
 The key's randomart image is:
 then copy the remote server in using command is ssh-copy-id username@ip then enteer after take ssh to remote server now login without passwd
 
-   # how to install the ssh server 
    
-      sudo apt update
-      sudo apt install openssh-server
-      sudo ufw enable
-      sudo ufw allow ssh
-      sudo systemctl status ssh
-      sudo systemctl start ssh
-           
-           
-   # How to stop the ssh server
-   
-      sudo service ssh stop
-      
-      sudo systemctl disable sshd.service
-           
            
    #### how to find the ip,subnetmask,getway,dns
    
