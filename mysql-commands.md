@@ -115,7 +115,9 @@ mysql> SELECT * FROM pfamily WHERE id=1;
 1 row in set (0.00 sec)
 
 
-  
+#  list all mysql user in mysql 
+
+   SELECT user FROM mysql.user;
 
 # how to login mysql root user
 
@@ -135,6 +137,7 @@ mysql> SELECT * FROM pfamily WHERE id=1;
     CREATE USER 'pandiyan'@'localhost' IDENTIFIED BY 'Pandi@12345';
 
     GRANT ALL PRIVILEGES ON * . * TO 'pandiyan'@'localhost';
+
 
 
     FLUSH PRIVILEGES;
@@ -174,9 +177,17 @@ mysql> SELECT * FROM pfamily WHERE id=1;
        
   # how to delete the table
   
+           DROP Table pandi;
+   
+  # how backup the table 
   
-         DROP Table pandi;
-         
+    mysqldump -u username -p databasename tablename > filename.sql or path name
+    
+    
+  # how to restore the table 
+  
+  
+     mysql -u username -p databasename < filename.sql or path name
        
    # how to insert to data in tables
     
@@ -216,12 +227,16 @@ mysql> SELECT * FROM pfamily WHERE id=1;
        
   # how to backup in mysql databases 
   
-      sudo mysqldump -u [user] -p [database_name] > [filename].sql
-       
-   # how to restore the data base
-    
-    
-       source /home/pandi/pandiya.sql
+      sudo mysqldump -u [user] -p [database_name] > [filename].sql or path name
+      
+      if filename.sql is backupdatabase  stored in this filename
+      user is user name
+      
+  # how to restore the database
+  
+     before restore the database if u create the same name database in mysql command line
+     
+  sudo mysql -u username -p database name < file name.sql or database backupfile path
        
        
    # how to install webserver apache2 in ubuntu
@@ -322,7 +337,7 @@ then copy the remote server in using command is ssh-copy-id username@ip then ent
       sudo systemctl disable sshd.service
            
            
-   # how to find the ip,subnetmask,getway,dns
+   #### how to find the ip,subnetmask,getway,dns
    
    
         nmcli dev show wlp4s0 | grep -i ip4
@@ -352,3 +367,4 @@ then copy the remote server in using command is ssh-copy-id username@ip then ent
 
          
             
+    
