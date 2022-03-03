@@ -150,11 +150,11 @@ mysql> SELECT * FROM pfamily WHERE id=1;
  # how to delete database 
      
      
-       DROP DATABASE Sanjana;
+       DROP DATABASE databasename;
       
   # how to change the database  
   
-       use Sanjana;     
+       USE databasename;     
        
   # how to check which database you are selected 
     
