@@ -346,9 +346,31 @@ then copy the remote server in using command is ssh-copy-id username@ip then ent
 
              wlp4so is room wifi connection  
     
-        
+ # how to find service is running if that service scipt location find 
+ 
+     sudo systemctl cat servive name
+     sudo systemctl cat apache2
     
+ # how to find service is active or inactive
+ 
+    systemctl --state=active
+    systemctl --state=inactive
+    systectl  -is active package name
     
+ # how to find service is enabled or not 
+ 
+     systemctl  -is enabled package name or service name
+     
+ # how to upgrade single package in ubuntu
+ 
+     sudo apt  --only-upgrade install package name
+       sudo apt  --only-upgrade install apache2
+       sudo apt list --upgradable   list ugradable packages
+       
+  # how to find which one is service or not services
+  
+     which package service is globally accept is called service    ex :apache2,mysql
+     which service is localy used are called non service  ex:ping,cat 
         
     
     
